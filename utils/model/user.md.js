@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+
+
 const Schema = mongoose.Schema;
 
 const userSchema = new mongoose.Schema({
@@ -18,7 +20,6 @@ const userSchema = new mongoose.Schema({
     mobile :{
         type : String,
         min : 10,
-        unique : true,
         required: true
     },
     password :{
